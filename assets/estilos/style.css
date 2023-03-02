@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap');
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    text-decoration:none;
+}
+
+:root{
+    --label-icon: url("https://imgur.com/vWISAB0.png");
+    --mascote:url("https://imgur.com/qioJEgL.png");
+    --logotipo:url("https://imgur.com/xoYJ1s6.png");
+    --cor-bg:#FFFBEB;
+    --cor-linhas: #FFE69A;
+    --cor-letras-1: #C780FA;
+    --cor-letras-2:#F8A6CC;
+}
+
+.dark-mode{
+    --label-icon: url("https://imgur.com/mT9RX9i.png");
+    --mascote: url("https://imgur.com/9IXfuT7.png");
+    --logotipo:url("https://imgur.com/X3VsUkq.png");
+    --cor-bg:#2D033B;
+    --cor-linhas: #16FF00;
+    --cor-letras-1: #FFEFDE;
+    --cor-letras-2:#16FF00;
+}
+
+body{
+    font-size:100%;
+    background-color:var(--cor-bg);   
+}
+
+.cabecalho{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding:24px;
+}
+
+.cabecalho-imagem{
+    background-image: var(--logotipo);
+    width: 200px;
+    background-size: cover;
+    position: relative;
+    padding:66px;
+}
+
+.cabecalho-menu{
+    display: flex;
+    gap:32px;
+}
+
+.cabecalho-menu-item{
+    font-size: 1.5rem;
+    font-family:'Sarala', sans-serif;
+    font-weight: 700;
+    color:var(--cor-letras-1);
+}
+
+.conteudo{
+    border-top: 5px solid var(--cor-linhas);
+}
+
+.conteudo-principal{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap:80px;
+    margin-top: 40px;
+}
+
+.conteudo-principal-escrito{
+    display:flex;
+    flex-direction: column;
+}
+
+.conteudo-principal-escrito-titulo{
+    font-family: 'Righteous', cursive;
+    font-weight: 400;
+    color: var(--cor-letras-2);
+    font-size: 3rem;
+}
+
+.conteudo-principal-escrito-subtitulo{
+    font-family:'Sarala', sans-serif;
+    font-weight: 400;
+    color: var(--cor-letras-1);
+    font-size: 1.5rem;
+}
+
+.conteudo-principal-imagem{
+    background-image: var(--mascote);
+    background-size: cover;
+    margin:0 0 10px 150px;
+    position: relative;
+    top: 10%;
+    right: 8%;
+    padding:225px;
+}
+
+.rodape{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:60px;
+    border-top: 5px solid var(--cor-linhas);
+}
+
+.mudar-tema{
+    margin-top: 30px;
+    align-content: center;
+    background: var(--label-icon);
+    padding:55px;
+    background-repeat: no-repeat;
+    cursor: pointer; 
+}
+
+.rodape-copyright{
+    font-family:'Sarala', sans-serif;
+    font-weight: 400;
+    color: var(--cor-letras-1);
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
